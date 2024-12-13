@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10ngon.vn - Typing Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>10ngon.vn</h1>
+            <p>Kiểm tra tốc độ gõ phím của bạn</p>
+        </header>
+
+        <div class="test-container">
+            <div class="stats">
+                <div class="stat-box">
+                    <span id="time">60</span>
+                    <label>Giây</label>
+                </div>
+                <div class="stat-box">
+                    <span id="wpm">0</span>
+                    <label>WPM</label>
+                </div>
+                <div class="stat-box">
+                    <span id="accuracy">100</span>
+                    <label>Độ chính xác</label>
+                </div>
+            </div>
+
+            <div id="word-display" class="word-display">
+                <!-- Words will be inserted here -->
+            </div>
+
+            <div class="input-area">
+                <input type="text" id="input-field" placeholder="Bắt đầu gõ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                <button id="restart-btn">Bắt đầu lại</button>
+            </div>
+        </div>
+
+        <div class="results" id="results" style="display: none;">
+            <h2>Kết quả</h2>
+            <div class="result-stats">
+                <div class="result-stat">
+                    <span id="final-wpm">0</span>
+                    <label>WPM</label>
+                </div>
+                <div class="result-stat">
+                    <span id="final-accuracy">0</span>
+                    <label>Độ chính xác</label>
+                </div>
+                <div class="result-stat">
+                    <span id="correct-words">0</span>
+                    <label>Từ đúng</label>
+                </div>
+                <div class="result-stat">
+                    <span id="incorrect-words">0</span>
+                    <label>Từ sai</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Load words.js before script.js since script.js depends on functions from words.js -->
+    <script src="words.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
